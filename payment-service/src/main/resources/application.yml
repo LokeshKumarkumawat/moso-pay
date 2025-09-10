@@ -21,7 +21,9 @@ logging:
     com.bytebyteboot: DEBUG
     com.razorpay: DEBUG
 
-
-
-
-
+razorpay:
+  key-id: ${RAZORPAY_KEY_ID:rzp_test_RDuQ9xnvNbxDuh}
+  key-secret: ${RAZORPAY_KEY_SECRET:4Jquq3l97Vg0lDlLekqTE7n2}
+  webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:myWebhookSecret123}
+  currency: INR
+  timeout: 30000

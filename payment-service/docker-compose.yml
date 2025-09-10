@@ -6,7 +6,7 @@ services:
     container_name: mysql-datasource
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: payment-service
+      MYSQL_DATABASE: payment_service
       MYSQL_USER: user
       MYSQL_PASSWORD: root
     ports:
