@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  mysql-datasource:
+    image: mysql:8
+    container_name: mysql-datasource
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: payment-service
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+    ports:
+      - "3307:3306"  # Expose port for local access
+    networks:
+      - payment-service
+
+networks:
+  payment-service:
+    driver: bridge

@@ -1,0 +1,58 @@
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs / Editors
+# =========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Backend (Spring Boot / Maven)
+# =========================
+payment-service/HELP.md
+payment-service/target/
+payment-service/.mvn/wrapper/maven-wrapper.jar
+!payment-service/**/src/main/**/target/
+!payment-service/**/src/test/**/target/
+
+# STS
+payment-service/.apt_generated
+payment-service/.classpath
+payment-service/.factorypath
+payment-service/.project
+payment-service/.settings
+payment-service/.springBeans
+payment-service/.sts4-cache
+
+# NetBeans
+payment-service/nbproject/private/
+payment-service/nbbuild/
+payment-service/dist/
+payment-service/nbdist/
+payment-service/.nb-gradle/
+payment-service/build/
+!payment-service/**/src/main/**/build/
+!payment-service/**/src/test/**/build/
+
+# =========================
+# Frontend (Angular / React)
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/npm-debug.log
+frontend/yarn-debug.log
+frontend/yarn-error.log
+

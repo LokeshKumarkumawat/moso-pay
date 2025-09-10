@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3307/payment_service}
+    username: ${MYSQL_USERNAME:user}
+    password: ${MYSQL_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+logging:
+  level:
+    com.bytebyteboot: DEBUG
+    com.razorpay: DEBUG
+
+
+
+
+
